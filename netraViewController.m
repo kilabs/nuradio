@@ -13,7 +13,6 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import <CFNetwork/CFNetwork.h>
 #import <Social/Social.h>
-#import "Flurry.h"
 @interface netraViewController ()
 
 @end
@@ -111,7 +110,7 @@
 											   &sessionCategory);
 		AudioSessionSetActive(TRUE);
 		if (err) {
-			NSLog(@"AudioSessionSetProperty kAudioSessionProperty_AudioCategory failed: %ld", err);
+			NSLog(@"AudioSessionSetProperty kAudioSessionProperty_AudioCategory failed: %d", (int)err);
 		}
         
         // Create a view of the standard size at the top of the screen.
@@ -197,7 +196,7 @@
     {
         SLComposeViewController *tweetSheet = [SLComposeViewController
                                                composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:@"Now Listening @RadioDawah via radio dawah for iphone"];
+        [tweetSheet setInitialText:@"Lagi dengerin @radio_nu via Radio NU for Iphone"];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
 else{
@@ -207,8 +206,11 @@ else{
 	if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
 		SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
-        [controller setInitialText:@"Now Listening @RadioDawah via radio dawah for iphone"];
+        [controller setInitialText:@"Lagi dengerin @radio_nu via Radio NU for Iphone"];
         [self presentViewController:controller animated:YES completion:Nil];
+    }
+    else{
+        [[[UIAlertView alloc]initWithTitle:@"Error" message:@"Tejadi Kesalahan di facebook" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil] show];
     }
 
 }
@@ -226,7 +228,7 @@ else{
 	
 }
 - (void)playPause:(id)sender{
-	[Flurry logEvent:@"EVENT_NAME" timed:YES];
+	
 	if (!_playing)
 	{
 		if(theAudio) {

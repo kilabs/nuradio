@@ -20,8 +20,6 @@
 		4387D8E8196353B00068B753 /* pn-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4387D8E5196353B00068B753 /* pn-light.otf */; };
 		4387D8E9196353B00068B753 /* pn-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4387D8E6196353B00068B753 /* pn-regular.otf */; };
 		4387D8EA196353B00068B753 /* pn-semi-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4387D8E7196353B00068B753 /* pn-semi-bold.otf */; };
-		D07B2EE4179D040E0042CE86 /* libFlurry_4.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07B2EE3179D040E0042CE86 /* libFlurry_4.2.2.a */; };
-		D07B2EE5179D040E0042CE86 /* libFlurry_4.2.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D07B2EE3179D040E0042CE86 /* libFlurry_4.2.2.a */; };
 		D07B2EE7179D045F0042CE86 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D07B2EE6179D045F0042CE86 /* SystemConfiguration.framework */; };
 		D07B2EEE179D0C360042CE86 /* Reachbility.m in Sources */ = {isa = PBXBuildFile; fileRef = D07B2EED179D0C360042CE86 /* Reachbility.m */; };
 		D07B2EEF179D0C360042CE86 /* Reachbility.m in Sources */ = {isa = PBXBuildFile; fileRef = D07B2EED179D0C360042CE86 /* Reachbility.m */; };
@@ -34,8 +32,6 @@
 		D0875B74179703CD0092EA80 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0875B73179703CD0092EA80 /* SenTestingKit.framework */; };
 		D0875B75179703CD0092EA80 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0875B55179703CC0092EA80 /* UIKit.framework */; };
 		D0875B76179703CD0092EA80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0875B57179703CC0092EA80 /* Foundation.framework */; };
-		D0875B7E179703CD0092EA80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0875B7C179703CD0092EA80 /* InfoPlist.strings */; };
-		D0875B81179703CD0092EA80 /* radiodawaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0875B80179703CD0092EA80 /* radiodawaTests.m */; };
 		D0875B8B179705620092EA80 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0875B8A179705620092EA80 /* AVFoundation.framework */; };
 		D0875B8D179706EE0092EA80 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0875B8C179706EE0092EA80 /* MediaPlayer.framework */; };
 		D0875B90179723870092EA80 /* netraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0875B8F179723870092EA80 /* netraViewController.m */; };
@@ -106,8 +102,6 @@
 		4387D8E5196353B00068B753 /* pn-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn-light.otf"; sourceTree = "<group>"; };
 		4387D8E6196353B00068B753 /* pn-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn-regular.otf"; sourceTree = "<group>"; };
 		4387D8E7196353B00068B753 /* pn-semi-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pn-semi-bold.otf"; sourceTree = "<group>"; };
-		D07B2EE2179D040E0042CE86 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		D07B2EE3179D040E0042CE86 /* libFlurry_4.2.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.2.2.a; sourceTree = "<group>"; };
 		D07B2EE6179D045F0042CE86 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D07B2EEC179D0C360042CE86 /* Reachbility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachbility.h; sourceTree = "<group>"; };
 		D07B2EED179D0C360042CE86 /* Reachbility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachbility.m; sourceTree = "<group>"; };
@@ -123,10 +117,6 @@
 		D0875B65179703CC0092EA80 /* netraAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = netraAppDelegate.m; sourceTree = "<group>"; };
 		D0875B72179703CD0092EA80 /* radiodawaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = radiodawaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0875B73179703CD0092EA80 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		D0875B7B179703CD0092EA80 /* radiodawaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "radiodawaTests-Info.plist"; sourceTree = "<group>"; };
-		D0875B7D179703CD0092EA80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D0875B7F179703CD0092EA80 /* radiodawaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = radiodawaTests.h; sourceTree = "<group>"; };
-		D0875B80179703CD0092EA80 /* radiodawaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = radiodawaTests.m; sourceTree = "<group>"; };
 		D0875B8A179705620092EA80 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D0875B8C179706EE0092EA80 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		D0875B8E179723870092EA80 /* netraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netraViewController.h; sourceTree = "<group>"; };
@@ -166,7 +156,6 @@
 				D0875B56179703CC0092EA80 /* UIKit.framework in Frameworks */,
 				D0875B58179703CC0092EA80 /* Foundation.framework in Frameworks */,
 				D0875B5A179703CC0092EA80 /* CoreGraphics.framework in Frameworks */,
-				D07B2EE4179D040E0042CE86 /* libFlurry_4.2.2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +166,6 @@
 				D0875B74179703CD0092EA80 /* SenTestingKit.framework in Frameworks */,
 				D0875B75179703CD0092EA80 /* UIKit.framework in Frameworks */,
 				D0875B76179703CD0092EA80 /* Foundation.framework in Frameworks */,
-				D07B2EE5179D040E0042CE86 /* libFlurry_4.2.2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +245,6 @@
 			children = (
 				0CF99F5A196322F800B3ECD8 /* GoogleMobileAdsSdkiOS-6.9.3 */,
 				D07B2EE6179D045F0042CE86 /* SystemConfiguration.framework */,
-				D07B2EE2179D040E0042CE86 /* Flurry.h */,
-				D07B2EE3179D040E0042CE86 /* libFlurry_4.2.2.a */,
 				D0CA1F9517983EE0006114AF /* Social.framework */,
 				D0875B93179723FA0092EA80 /* QuartzCore.framework */,
 				D0875B91179723F10092EA80 /* AudioToolbox.framework */,
@@ -267,7 +253,6 @@
 				D0875B8C179706EE0092EA80 /* MediaPlayer.framework */,
 				D0875B8A179705620092EA80 /* AVFoundation.framework */,
 				D0875B5B179703CC0092EA80 /* radiodawa */,
-				D0875B79179703CD0092EA80 /* radiodawaTests */,
 				D0875B54179703CC0092EA80 /* Frameworks */,
 				D0875B53179703CC0092EA80 /* Products */,
 			);
@@ -321,25 +306,6 @@
 				D0875B5E179703CC0092EA80 /* InfoPlist.strings */,
 				D0875B61179703CC0092EA80 /* main.m */,
 				D0875B63179703CC0092EA80 /* radiodawa-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D0875B79179703CD0092EA80 /* radiodawaTests */ = {
-			isa = PBXGroup;
-			children = (
-				D0875B7F179703CD0092EA80 /* radiodawaTests.h */,
-				D0875B80179703CD0092EA80 /* radiodawaTests.m */,
-				D0875B7A179703CD0092EA80 /* Supporting Files */,
-			);
-			path = radiodawaTests;
-			sourceTree = "<group>";
-		};
-		D0875B7A179703CD0092EA80 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D0875B7B179703CD0092EA80 /* radiodawaTests-Info.plist */,
-				D0875B7C179703CD0092EA80 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -473,7 +439,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0875B7E179703CD0092EA80 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +476,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0875B81179703CD0092EA80 /* radiodawaTests.m in Sources */,
 				D07B2EEF179D0C360042CE86 /* Reachbility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,14 +495,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0875B5F179703CC0092EA80 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D0875B7C179703CD0092EA80 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0875B7D179703CD0092EA80 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

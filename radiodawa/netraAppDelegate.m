@@ -8,7 +8,6 @@
 
 #import "netraAppDelegate.h"
 #import "netraViewController.h"
-#import "Flurry.h"
 @implementation netraAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -30,8 +29,7 @@
                                                            [UIColor whiteColor], NSForegroundColorAttributeName,
                                                            shadow, NSShadowAttributeName,
                                                            [UIFont fontWithName:fontDefault size:18], NSFontAttributeName, nil]];
-	//8TYC4C3J2CMYZ54C5DZ7
-	[Flurry startSession:@"8TYC4C3J2CMYZ54C5DZ7"];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
 	netraViewController *roots=[[netraViewController alloc]init];
