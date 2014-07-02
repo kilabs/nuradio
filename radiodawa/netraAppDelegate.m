@@ -13,6 +13,23 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *fontDefault = @"Proxima Nova";
+    //init nav
+    
+    [[UIBarButtonItem appearance] setBackButtonTitlePositionAdjustment:UIOffsetMake(-200.f, 0) forBarMetrics:UIBarMetricsDefault];
+	[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar"] forBarMetrics:UIBarMetricsDefault];
+	[[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+	
+	NSShadow *shadow = [[NSShadow alloc] init];
+    
+	shadow.shadowColor = [UIColor clearColor];
+    
+	shadow.shadowOffset = CGSizeMake(0, 1);
+    
+	[[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                           shadow, NSShadowAttributeName,
+                                                           [UIFont fontWithName:fontDefault size:18], NSFontAttributeName, nil]];
 	//8TYC4C3J2CMYZ54C5DZ7
 	[Flurry startSession:@"8TYC4C3J2CMYZ54C5DZ7"];
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

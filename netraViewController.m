@@ -28,7 +28,7 @@
         // Custom initialization
 		self.title=@"Radio NU";
 		button=[UIButton buttonWithType:UIButtonTypeCustom];
-		button.frame=CGRectMake(110, self.view.frame.size.height-165, 100, 100);
+		button.frame=CGRectMake(110, self.view.frame.size.height-265, 100, 100);
 		button.backgroundColor=[UIColor clearColor];
 		[button addTarget:self action:@selector(playPause:) forControlEvents:UIControlEventTouchUpInside];
 		
@@ -62,11 +62,11 @@
 		
 		
 		twitter=[UIButton buttonWithType:UIButtonTypeCustom];
-		twitter.frame=CGRectMake(210, self.view.frame.size.height-155, 80, 80);
+		twitter.frame=CGRectMake(210, self.view.frame.size.height-255, 80, 80);
 		[twitter setBackgroundImage:[UIImage imageNamed:@"twitter"] forState:UIControlStateNormal];
 		[twitter addTarget:self action:@selector(twitterShare) forControlEvents:UIControlEventTouchUpInside];
 		facebook=[UIButton buttonWithType:UIButtonTypeCustom];
-		facebook.frame=CGRectMake(30, self.view.frame.size.height-155, 80, 80);
+		facebook.frame=CGRectMake(30, self.view.frame.size.height-255, 80, 80);
 		[facebook addTarget:self action:@selector(facebookShare) forControlEvents:UIControlEventTouchUpInside];
 		[facebook setBackgroundImage:[UIImage imageNamed:@"favebook"] forState:UIControlStateNormal];
 		
@@ -84,7 +84,7 @@
 //		[self.view addSubview:title];
 		[self setButtonImageNamed:@"playbutton.png"];
 		_playing = NO;
-		volumeSlider=[[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-55, 320, 55)];
+		volumeSlider=[[UIView alloc]initWithFrame:CGRectMake(0, self.view.frame.size.height-115, 320, 55)];
 		volumeSlider.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"volume"]];
 		MPVolumeView *volumeView = [[MPVolumeView alloc] initWithFrame:CGRectMake(43, 16, 230, 25)];
 		UIView *a=[[UIView alloc] init];
@@ -116,9 +116,9 @@
         
         // Create a view of the standard size at the top of the screen.
         // Available AdSize constants are explained in GADAdSize.h.
-        bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeLargeBanner];
+        bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
         [bannerView_ setFrame:CGRectMake(0,
-                                         46,
+                                         0,
                                          bannerView_.bounds.size.width,
                                          bannerView_.bounds.size.height)];
         
