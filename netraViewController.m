@@ -25,7 +25,7 @@
     if (self) {
 		//self.view.backgroundColor= [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-today"]];
         // Custom initialization
-		self.title=@"Radio Muhammadiyah";
+		self.title=@"Radio Rodja";
 		button=[UIButton buttonWithType:UIButtonTypeCustom];
 		button.frame=CGRectMake(110, self.view.frame.size.height-265, 100, 100);
 		button.backgroundColor=[UIColor clearColor];
@@ -196,7 +196,7 @@
     {
         SLComposeViewController *tweetSheet = [SLComposeViewController
                                                composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:@"Lagi dengerin @RadioMuh via Radio Muhammadiyah for Iphone"];
+        [tweetSheet setInitialText:@"Lagi dengerin @radiorodja via Radio Rodja for Iphone"];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
 else{
@@ -206,7 +206,7 @@ else{
 	if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
 		SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
-        [controller setInitialText:@"Lagi dengerin @RadioMuh via Radio Muhammadiyah for Iphone"];
+        [controller setInitialText:@"Lagi dengerin @radiorodja via Radio Rodja for Iphone"];
         [self presentViewController:controller animated:YES completion:Nil];
     }
     else{
@@ -237,7 +237,7 @@ else{
 			[self spinButton];
            [self setButtonImageNamed:@"stopbutton.png"];
         } else {
-            url = [[NSURL alloc] initWithString:@"http://173.224.125.73:9993/;stream.nsv&type=mp3"];
+            url = [[NSURL alloc] initWithString:@"http://live2.radiorodja.com:80/;&lang=en&codec=mp3"];
             theItem = [AVPlayerItem playerItemWithURL:url];
             [theItem addObserver:self forKeyPath:@"status" options:0 context:nil];
             theAudio = [AVPlayer playerWithPlayerItem:theItem];
