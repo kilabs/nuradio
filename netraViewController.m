@@ -23,9 +23,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		//self.view.backgroundColor= [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-today"]];
-        // Custom initialization
-		self.title=@"Radio Rodja";
+
 		button=[UIButton buttonWithType:UIButtonTypeCustom];
 		button.frame=CGRectMake(110, self.view.frame.size.height-265, 100, 100);
 		button.backgroundColor=[UIColor clearColor];
@@ -122,7 +120,7 @@
                                          bannerView_.bounds.size.height)];
         
         // Specify the ad unit ID.
-        bannerView_.adUnitID = @"ca-app-pub-3316366331420238/1985159700";
+        bannerView_.adUnitID = @"ca-app-pub-3316366331420238/5996556902";
         
         // Initiate a generic request to load it with an ad.
         [bannerView_ loadRequest:[GADRequest request]];
@@ -237,7 +235,7 @@ else{
 			[self spinButton];
            [self setButtonImageNamed:@"stopbutton.png"];
         } else {
-            url = [[NSURL alloc] initWithString:@"http://live2.radiorodja.com:80/;&lang=en&codec=mp3"];
+            url = [[NSURL alloc] initWithString:@"http://us.kradio.in:8888/;stream.mp3&type=mp3"];
             theItem = [AVPlayerItem playerItemWithURL:url];
             [theItem addObserver:self forKeyPath:@"status" options:0 context:nil];
             theAudio = [AVPlayer playerWithPlayerItem:theItem];
