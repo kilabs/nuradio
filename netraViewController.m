@@ -122,7 +122,7 @@
                                          bannerView_.bounds.size.height)];
         
         // Specify the ad unit ID.
-        bannerView_.adUnitID = @"ca-app-pub-3316366331420238/7671766503";
+        bannerView_.adUnitID = @"ca-app-pub-3316366331420238/1985159700";
         
         // Initiate a generic request to load it with an ad.
         [bannerView_ loadRequest:[GADRequest request]];
