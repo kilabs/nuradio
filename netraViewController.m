@@ -25,7 +25,7 @@
     if (self) {
 		//self.view.backgroundColor= [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-today"]];
         // Custom initialization
-		self.title=@"Radio NU";
+		self.title=@"Radio Muhammadiyah";
 		button=[UIButton buttonWithType:UIButtonTypeCustom];
 		button.frame=CGRectMake(110, self.view.frame.size.height-265, 100, 100);
 		button.backgroundColor=[UIColor clearColor];
@@ -122,7 +122,7 @@
                                          bannerView_.bounds.size.height)];
         
         // Specify the ad unit ID.
-        bannerView_.adUnitID = @"ca-app-pub-3316366331420238/8275698904";
+        bannerView_.adUnitID = @"ca-app-pub-3316366331420238/7671766503";
         
         // Initiate a generic request to load it with an ad.
         [bannerView_ loadRequest:[GADRequest request]];
@@ -196,7 +196,7 @@
     {
         SLComposeViewController *tweetSheet = [SLComposeViewController
                                                composeViewControllerForServiceType:SLServiceTypeTwitter];
-        [tweetSheet setInitialText:@"Lagi dengerin @radio_nu via Radio NU for Iphone"];
+        [tweetSheet setInitialText:@"Lagi dengerin @RadioMuh via Radio Muhammadiyah for Iphone"];
         [self presentViewController:tweetSheet animated:YES completion:nil];
     }
 else{
@@ -206,7 +206,7 @@ else{
 	if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
 		SLComposeViewController *controller = [SLComposeViewController composeViewControllerForServiceType:SLServiceTypeFacebook];
         
-        [controller setInitialText:@"Lagi dengerin @radio_nu via Radio NU for Iphone"];
+        [controller setInitialText:@"Lagi dengerin @RadioMuh via Radio Muhammadiyah for Iphone"];
         [self presentViewController:controller animated:YES completion:Nil];
     }
     else{
@@ -237,7 +237,7 @@ else{
 			[self spinButton];
            [self setButtonImageNamed:@"stopbutton.png"];
         } else {
-            url = [[NSURL alloc] initWithString:@"http://119.2.80.21:8001/;stream.nsv&type=mp3"];
+            url = [[NSURL alloc] initWithString:@"http://173.224.125.73:9993/;stream.nsv&type=mp3"];
             theItem = [AVPlayerItem playerItemWithURL:url];
             [theItem addObserver:self forKeyPath:@"status" options:0 context:nil];
             theAudio = [AVPlayer playerWithPlayerItem:theItem];
