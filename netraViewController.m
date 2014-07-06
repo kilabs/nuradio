@@ -112,25 +112,10 @@
 		if (err) {
 			NSLog(@"AudioSessionSetProperty kAudioSessionProperty_AudioCategory failed: %d", (int)err);
 		}
-        
-        // Create a view of the standard size at the top of the screen.
-        // Available AdSize constants are explained in GADAdSize.h.
-        bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
-        [bannerView_ setFrame:CGRectMake(0,
-                                         0,
-                                         bannerView_.bounds.size.width,
-                                         bannerView_.bounds.size.height)];
-        
-        // Specify the ad unit ID.
-        bannerView_.adUnitID = @"ca-app-pub-3316366331420238/8275698904";
-        
-        // Initiate a generic request to load it with an ad.
-        [bannerView_ loadRequest:[GADRequest request]];
-        bannerView_.rootViewController = self;
-        [self.view addSubview:bannerView_];
-        
-        // Initiate a generic request to load it with an ad.
-        [bannerView_ loadRequest:[GADRequest request]];
+        self.bannerView_iad = [[ADBannerView alloc] initWithFrame:CGRectMake(0, 0, 320, 50)];
+        [self.bannerView_iad setDelegate:self];
+        [self.view addSubview:self.bannerView_iad];
+
         
         // Do any additional setup after loading the view.
 
@@ -138,6 +123,32 @@
     }
     return self;
 }
+
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    
+    // Create a view of the standard size at the top of the screen.
+    // Available AdSize constants are explained in GADAdSize.h.
+    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    [bannerView_ setFrame:CGRectMake(0,
+                                     0,
+                                     bannerView_.bounds.size.width,
+                                     bannerView_.bounds.size.height)];
+    
+    // Specify the ad unit ID.
+    bannerView_.adUnitID = @"ca-app-pub-3316366331420238/8275698904";
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
+}
+
+
 - (void)setButtonImageNamed:(NSString *)imageName
 {
 	currentImageName = imageName;

@@ -10,8 +10,9 @@
 @class AVAudioPlayer;
 @class AVPlayerItem;
 #import "GADBannerView.h"
+#import <iAd/iAd.h>
 GADBannerView *bannerView_;
-@interface netraViewController : UIViewController
+@interface netraViewController : UIViewController<ADBannerViewDelegate>
 {
 	UIButton   *button;
 	UIButton   *twitter;
@@ -28,7 +29,7 @@ GADBannerView *bannerView_;
 }
 - (void)showInfo:(id)sender;
 - (void)playPause:(id)sender;
-
+@property (nonatomic, strong) ADBannerView *bannerView_iad;
 @property (nonatomic, retain) AVAudioPlayer	*theAudio;
 @property (nonatomic, retain) AVPlayerItem	*theItem;
 @property (nonatomic, retain) NSURL         *url;
